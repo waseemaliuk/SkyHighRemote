@@ -1,0 +1,9 @@
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\bin\Debug\netstandard2.1\SkyHighRemote.Shared.deps.json
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\bin\Debug\netstandard2.1\SkyHighRemote.Shared.dll
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\bin\Debug\netstandard2.1\SkyHighRemote.Shared.pdb
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.AssemblyInfoInputs.cache
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.AssemblyInfo.cs
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.csproj.CoreCompileInputs.cache
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.dll
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.pdb
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Shared\obj\Debug\netstandard2.1\SkyHighRemote.Shared.csprojAssemblyReference.cache

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Epm77M14jWw28nj+vL4xgzIAgzDHEDnAt4Y7VCvVUVE3yjuVLGGLEtc/y7oS5Vvs0ZTZ8GGslgKZOo6Kt8FqOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Shared\\SkyHighRemote.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wasee\\.nuget\\packages\\netstandard.library.ref\\2.1.0\\netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,194 @@
+{
+  "FilesToCompress": [
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YP58Sa5yi8xHtj2tYZwV1fQmVByrIczuDc2zrYwLv5I=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\purEVRrVbp6R6LR_gaRTdbOGJgXG8AybMABt2j71fNg=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\tWrCWWiVJzlNKNw2PUISNBzpthPMZUudufkz-955PCw=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xPiFtU94c_K06DctIqIJULN1Rm2a-n3rhew4R2KjXWA=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\jzHgXWAvWMkKIGFjZoT84tbe72E_H7CvTr-Dryh4QPs=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\f02cmqyWm_hqHI3FedDjgNeMQNxJNOfbUe-GtJ4F_BA=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\e7bHEipCh88o_0II9NgJt8YRePnC1ZuMtrAjEA3BNcc=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Nub6ABIomQpls2Co0M-6NNCefFzwKzMQogL0OQVDehE=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.FileExtensions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.FileExtensions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2v5oo9d6hRTmvWpRZG_rnZHlJiOgnAl1f5L3mZ07MjY=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\N3bjP5Zdw2h9x7eB79wHYchVOchNMW4r_QhdzTYqcfc=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xI4Xd6SIlVBq5o_brJU9CeFp8Qx4m7RI3_EJn5NHi04=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CPJl1ku2Z1jc8e-J0xbwHqPueYw68FCWPDqyR_fBOjo=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.FileProviders.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\_86tuId9U-vrrN7Tei1tqw4UDqx3iKLOqAZaA9jS6tg=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.FileProviders.Physical.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.FileProviders.Physical.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bZhwcxlzmF6qKWTmr_LmUmrZC8hGn7WnCUY2iWNoXSU=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.FileSystemGlobbing.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.FileSystemGlobbing.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\eJD8hdKYrpzbDjnXQ0A3Bo-CUn6tzdYIUB_yz8vNM5c=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xW7o87M-EfK7sdzDLAuKLPpB0ZQxD-fS5Au2RAageN8=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\eTQuIZ2sp1TtfIxASKIscuXoiLQSkBt5lmiuFfPAbFs=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Quyvpx8anVpWC0llLGasxgd81a38dfNlbgsVQSyGbcs=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3cbvJEo8k8VJVQwyEZWWQ6yGRFQW8-219DaOnmsX3e4=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\1hBheP_gGncTH5ZWVak-ExbNez28-qvU3p2eNISzr18=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YF3XM0ifYr1cOnXrxpCFbvE6nPLfRpdDQUk4DmDiirk=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\mscorlib.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2Kw8l74A_ZVJCt6ealKfmJeYyZW0GuIWJQHg7r2c97k=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\SkyHighRemote.Client.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Client.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2s3i4a1_2VvxH_Qz7r6034jzS9DGPUHHyN3NQxxMPMo=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\SkyHighRemote.Shared.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Shared.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SGMi2pARz5pNTH_m9W6J5ZGN-uKyqMlVpszu8HCm4WA=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Core.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\PGlVx40rbjP0XQz45PIK2VS5XDadWkZanhQ7yKOL6uA=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\fJpBy5vs9p2kPHZ7QLkthexDmrw2jo3BI4KJugi9zHE=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HpLO9-9ZTx7StGakw5KF4SbgxsqqlWcnVopVLzCTo3A=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xkjPJVX7gPsWCGpA8iPYDtf_L0sK7p2MQxyQ_p1tW48=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\_IxsZlTr1-wNE217GFVJt6qSDUc_j2TN4jQlCOKx0g0=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\8PCCymTpq_WzJH2TxQKosTxweK3pTqxfJXjTGS6AdxU=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Eb1RA_ZmmjH1xhqWn8qTCf5nCE5Qk21qOsko8mjliBk=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\iUnCxwwr9XczvXVeVDu4QzkNtGrC9ixEUsIBGYC3MYs=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\linker\\WebAssembly.Bindings.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
+      "Source": "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.3.2.0.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.3.2.0.js.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.timezones.dat",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.timezones.dat.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
+      "Source": "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.wasm",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.wasm.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash",
+      "Source": "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.build\\3.2.0\\tools\\blazor\\blazor.webassembly.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Z8KUZ5cOV3sj4QXrTtuafwAY0uexVlO4Ti2GFTrhzKw=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\blazor.boot.json",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2mJJB-N1_LkWoNwUoyI74RUIy7nGPTMXayxiyGrlDLQ=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Release\\netstandard2.1\\blazor\\service-worker-assets.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\service-worker-assets.js.br"
+    }
+  ]
+}

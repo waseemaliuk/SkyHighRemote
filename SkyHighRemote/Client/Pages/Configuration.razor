@@ -1,0 +1,231 @@
+﻿@page "/configuration"
+
+@inject SkyHighRemote.Client.IAppConfiguration AppConfig
+@inject HttpClient Http
+@inject IWebAssemblyHostEnvironment HostEnvironment
+@inject IJSRuntime JsRuntime;
+@inject IConfiguration  configuration;
+
+<div id="configuration">
+    <h1>Configuration</h1>
+    @if (loading)
+        {
+    <div class="loader"><img src="images/Blocks-2s-200px.gif" /></div>
+        }
+
+    @if (AppConfig == null || string.IsNullOrEmpty(AppConfig.SkyBoxIP))
+        {
+    <div id="find">
+        <p>You must find and select the Sky HD box on your network.</p>
+        <button class="btn btn-lg btn-primary" type="submit" @onclick='@(async () => await FindBoxes())' disabled=@loading>Find Sky HD Boxes</button>
+    </div>
+    <div id="boxes">
+        @if (boxes.Count() > 0)
+                {
+        <p class="font-weight-bold">@boxes.Count() found.</p>
+                }
+        @foreach (SkyHDBox box in boxes)
+                {
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">@box.IPAddress</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>@box.ModelName</li>
+                        <li>@box.ModelNumber</li>
+                    </ul>
+                    <button type="button" class="btn btn-sm btn-secondary" @onclick='@(e => SelectBox(box.IPAddress))'>Control this box</button>
+                </div>
+            </div>
+        </div>
+                }
+    </div>
+        }
+        else
+        {
+    <div id="found" class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p class="font-weight-bold">You are controlling a box at @AppConfig.SkyBoxIP</p>
+            </div>
+        </div>
+        <div class="row" id="change">
+            <div class="col">
+                <button class="btn btn-sm btn-secondary" type="submit" @onclick='@(e => ClearBox())'>Change</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="custom-control custom-switch" id="vibrateDiv">
+                    <input type="checkbox" class="custom-control-input" id="vibrate" @onclick='@(async () => await ToggleVibrate())' checked="@AppConfig.Vibrate" />
+                    <label class="custom-control-label" for="vibrate">Vibrate (where supported)</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="custom-control custom-switch" id="playsoundDiv">
+                    <input type="checkbox" class="custom-control-input" id="playsound" @onclick='@(async () => await TogglePlaySound())' checked="@AppConfig.PlaySound" />
+                    <label class="custom-control-label" for="playsound">Play Sound (where supported)</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="custom-control custom-switch" id="showvisualDiv">
+                    <input type="checkbox" class="custom-control-input" id="showvisual" @onclick='ToggleShowVisual' checked="@AppConfig.ShowVisual" />
+                    <label class="custom-control-label" for="showvisual">Visual Feedback</label>
+                </div>
+            </div>
+        </div>
+    </div>
+        }
+    <div id="versions" class="container-fluid">
+            <div class="d-flex flex-row align-items-center small">
+                <p class="p-2 my-auto">Client Version : @clientVersion</p>
+                <p class="p-2 my-auto">Server Version : @serverVersion</p>
+       @if (serverVersion != clientVersion)
+            {
+            <div class="p-2 my-auto"><button class="btn btn-outline-info btn-sm" type="submit" @onclick='@(async () => await RefreshApp())'>Refresh App</button></div>
+        }
+        </div>
+        @if (serverVersion != clientVersion)
+        {
+        <div class="row">
+            <div class="col small"><p>If versions don't match after refresh, clear your browser cache!</p></div>
+        </div>
+        }
+    </div>
+</div>
+@code {
+
+    private string clientVersion, serverVersion;
+
+    List<SkyHDBox> boxes = new List<SkyHDBox>();
+    private bool loading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        try
+        {
+            loading = true;
+            clientVersion = configuration["Version:Client"];
+            serverVersion = await Http.GetStringAsync("skyremote/getversion");
+        }
+        catch (Exception ex)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+        }
+
+        loading = false;
+    }
+
+    /// <summary>
+    /// Gets list of Sky HD boxes from the Server
+    /// </summary>
+    /// <returns></returns>
+    private async Task FindBoxes()
+    {
+
+        try
+        {
+            loading = true;
+            boxes = await Http.GetFromJsonAsync<List<SkyHDBox>>("skyremote/findboxes");
+        }
+        catch (Exception ex)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+        }
+
+        loading = false;
+    }
+
+    /// <summary>
+    /// Selects the box the user wishes to use in the app
+    /// </summary>
+    /// <param name="ipAddress"></param>
+    private void SelectBox(string ipAddress)
+    {
+        if (!String.IsNullOrEmpty(ipAddress))
+        {
+            AppConfig.SkyBoxIP = ipAddress;
+
+            AppConfig.Save();
+
+            boxes.Clear();
+        }
+    }
+
+    /// <summary>
+    /// Clears the IP of the box we are controlling
+    /// </summary>
+    private void ClearBox()
+    {
+        AppConfig.SkyBoxIP = String.Empty;
+        AppConfig.Save();
+    }
+
+    /// <summary>
+    /// Sets vibrate setting based on the toggle state
+    /// </summary>
+    private async Task ToggleVibrate()
+    {
+        AppConfig.Vibrate = (AppConfig.Vibrate == true ? false : true);
+        AppConfig.Save();
+
+        //Fire a vibrate to allow for any permissions popups to be actioned in certain browsers.
+        if (AppConfig.Vibrate)
+        {
+            await JsRuntime.InvokeVoidAsync("feedback", true, false, false);
+        }
+    }
+
+    /// <summary>
+    /// Sets play sound setting based on the toggle state
+    /// </summary>
+    private async Task TogglePlaySound()
+    {
+        AppConfig.PlaySound = (AppConfig.PlaySound == true ? false : true);
+        AppConfig.Save();
+
+        //Fire a sound to allow for any permissions popups to be actioned in certain browsers.
+        if (AppConfig.PlaySound)
+        {
+            await JsRuntime.InvokeVoidAsync("feedback", false, true, false);
+        }
+    }
+
+
+    /// <summary>
+    /// Sets showvisual setting based on the toggle state
+    /// </summary>
+    private void ToggleShowVisual()
+    {
+        AppConfig.ShowVisual = (AppConfig.ShowVisual == true ? false : true);
+        AppConfig.Save();
+    }
+
+    /// <summary>
+    /// Force reloads the app
+    /// </summary>
+    private async Task RefreshApp()
+    {
+
+        try
+        {
+            await JsRuntime.InvokeVoidAsync("refreshapp");
+        }
+        catch (Exception ex)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+        }
+
+    }
+}
+
+
+
+

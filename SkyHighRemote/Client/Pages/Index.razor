@@ -1,0 +1,119 @@
+﻿@page "/"
+
+@inject HttpClient Http
+@inject IWebAssemblyHostEnvironment HostEnvironment
+@inject IJSRuntime JsRuntime;
+@inject NavigationManager NavManager
+@inject SkyHighRemote.Client.IAppConfiguration AppConfig
+
+    <div id="remote">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 452 1333" height="100%" id="remoteCanvas">
+            <image width="452" height="1333" xlink:href="images/SkyHD.jpg" />
+            <image width="23" height="23" xlink:href="images/light.jpg" id="light" x="209" y="81" style="display: none" />
+            <ellipse cx="116" cy="138" rx="44" ry="30" opacity="0" id='tv' @onclick='@(async () => await NotImplemented("tv"))' />
+            <circle cx="327" cy="122" r="36" opacity="0" id='power' @onclick='@(async () => await SendCommand("power"))' />
+            <ellipse cx="222" cy="168" rx="54" ry="33" opacity="0" id='sky' @onclick='@(async () => await SendCommand("sky"))' />
+            <ellipse cx="150" cy="229" rx="50" ry="30" opacity="0" id='boxoffice' @onclick='@(async () => await SendCommand("boxoffice"))' />
+            <ellipse cx="295" cy="227" rx="50" ry="30" opacity="0" id='services' @onclick='@(async () => await SendCommand("services"))' />
+            <ellipse cx="93" cy="287" rx="50" ry="30" opacity="0" id='tvguide' @onclick='@(async () => await SendCommand("tvguide"))' />
+            <ellipse cx="355" cy="283" rx="50" ry="30" opacity="0" id='interactive' @onclick='@(async () => await SendCommand("interactive"))' />
+            <circle cx="156" cy="337" r="28" opacity="0" id='mute' @onclick='@(async () => await NotImplemented("mute"))' />
+            <circle cx="292" cy="336" r="28" opacity="0" id='i' @onclick='@(async () => await SendCommand("i"))' />
+            <ellipse cx="225" cy="390" rx="50" ry="30" opacity="0" id='up' @onclick='@(async () => await SendCommand("up"))' />
+            <ellipse cx="90" cy="426" rx="30" ry="45" opacity="0" transform="rotate(45, 105, 415)" id='volumeup' @onclick='@(async () => await NotImplemented("volume up"))' />
+            <ellipse cx="90" cy="500" rx="30" ry="45" opacity="0" transform="rotate(-45, 125, 515)" id='volumedown' @onclick='@(async () => await NotImplemented("volume down"))' />
+            <ellipse cx="150" cy="468" rx="30" ry="50" opacity="0" id='left' @onclick='@(async () => await SendCommand("left"))' />
+            <circle cx="227" cy="466" r="35" opacity="0" id='select' @onclick='@(async () => await SendCommand("select"))' />
+            <ellipse cx="303" cy="466" rx="30" ry="50" opacity="0" id='right' @onclick='@(async () => await SendCommand("right"))' />
+            <ellipse cx="227" cy="543" rx="50" ry="30" opacity="0" id='down' @onclick='@(async () => await SendCommand("down"))' />
+            <ellipse cx="364" cy="414" rx="30" ry="45" opacity="0" transform="rotate(-45, 350, 415)" id='channelup' @onclick='@(async () => await SendCommand("channelup"))' />
+            <ellipse cx="366" cy="512" rx="30" ry="45" opacity="0" transform="rotate(45, 350, 515)" id='channeldown' @onclick='@(async () => await SendCommand("channeldown"))' />
+            <circle cx="117" cy="606" r="28" opacity="0" id='text' @onclick='@(async () => await SendCommand("text"))' />
+            <ellipse cx="227" cy="610" rx="50" ry="30" opacity="0" id='backup' @onclick='@(async () => await SendCommand("backup"))' />
+            <circle cx="339" cy="603" r="28" opacity="0" id='help' @onclick='@(async () => await SendCommand("help"))' />
+            <ellipse cx="123" cy="694" rx="30" ry="45" opacity="0" id='rewind' @onclick='@(async () => await SendCommand("rewind"))' />
+            <ellipse cx="227" cy="672" rx="50" ry="25" opacity="0" id='pause' @onclick='@(async () => await SendCommand("pause"))' />
+            <ellipse cx="227" cy="724" rx="50" ry="25" opacity="0" id='play' @onclick='@(async () => await SendCommand("play"))' />
+            <ellipse cx="334" cy="692" rx="30" ry="45" opacity="0" id='fastforward' @onclick='@(async () => await SendCommand("fastforward"))' />
+            <ellipse cx="177" cy="780" rx="45" ry="30" opacity="0" transform="rotate(30, 180, 785)" id='record' @onclick='@(async () => await SendCommand("record"))' />
+            <ellipse cx="270" cy="829" rx="45" ry="30" opacity="0" transform="rotate(-30, 180, 785)" id='stop' @onclick='@(async () => await SendCommand("stop"))' />
+            <circle cx="129" cy="831" r="26" opacity="0" id='red' @onclick='@(async () => await SendCommand("red"))' />
+            <circle cx="195" cy="850" r="26" opacity="0" id='green' @onclick='@(async () => await SendCommand("green"))' />
+            <circle cx="267" cy="849" r="26" opacity="0" id='yellow' @onclick='@(async () => await SendCommand("yellow"))' />
+            <circle cx="333" cy="827" r="26" opacity="0" id='blue' @onclick='@(async () => await SendCommand("blue"))' />
+            <circle cx="149" cy="924" r="36" opacity="0" id='1' @onclick='@(async () => await SendCommand("1"))' />
+            <circle cx="232" cy="930" r="36" opacity="0" id='2' @onclick='@(async () => await SendCommand("2"))' />
+            <circle cx="314" cy="922" r="36" opacity="0" id='3' @onclick='@(async () => await SendCommand("3"))' />
+            <circle cx="150" cy="1003" r="36" opacity="0" id='4' @onclick='@(async () => await SendCommand("4"))' />
+            <circle cx="233" cy="1010" r="36" opacity="0" id='5' @onclick='@(async () => await SendCommand("5"))' />
+            <circle cx="315" cy="1000" r="36" opacity="0" id='6' @onclick='@(async () => await SendCommand("6"))' />
+            <circle cx="151" cy="1082" r="36" opacity="0" id='7' @onclick='@(async () => await SendCommand("7"))' />
+            <circle cx="233" cy="1088" r="36" opacity="0" id='8' @onclick='@(async () => await SendCommand("8"))' />
+            <circle cx="316" cy="1080" r="36" opacity="0" id='9' @onclick='@(async () => await SendCommand("9"))' />
+            <circle cx="234" cy="1168" r="36" opacity="0" id='0' @onclick='@(async () => await SendCommand("0"))' />
+            <circle cx="226" cy="666" r="50" opacity="0.5" id='pointer' fill='red' />
+        </svg>
+    </div>
+@code {
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"Hosting Environment : {HostEnvironment.Environment}");
+
+        if (AppConfig == null)
+        {
+            NavManager.NavigateTo("/configuration");
+        }
+        else
+        {
+            if (String.IsNullOrEmpty(AppConfig.SkyBoxIP))
+            {
+                NavManager.NavigateTo("/configuration");
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// Sends command to the box defined in AppConfig
+    /// </summary>
+    /// <param name="command"></param>
+    private async Task SendCommand(string command)
+    {
+        try
+        {
+            //Output any feedback
+            await JsRuntime.InvokeVoidAsync("feedback", AppConfig.Vibrate, AppConfig.PlaySound, AppConfig.ShowVisual);
+
+            HttpResponseMessage response = await Http.PostAsync($"skyremote/sendcommand/{AppConfig.SkyBoxIP}/{command}", null);
+
+            if (HostEnvironment.IsDevelopment())
+            {
+                Console.WriteLine(response);
+            }
+
+            if (!response.IsSuccessStatusCode)
+            {
+                await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {response.ReasonPhrase}");
+            }
+
+        }
+        catch (Exception ex)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+        }
+
+    }
+
+    /// <summary>
+    /// Throws up a popup when a button isn't implemented
+    /// </summary>
+    /// <param name="button">The name of the button</param>
+    private async Task NotImplemented(string button)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", $"Button '{button}' is not implemented.");
+    }
+}
+
+
+

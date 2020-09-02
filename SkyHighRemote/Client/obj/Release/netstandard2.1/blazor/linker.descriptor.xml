@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="SkyHighRemote.Client">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>
