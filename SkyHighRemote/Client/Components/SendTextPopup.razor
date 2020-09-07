@@ -1,0 +1,78 @@
+﻿@inject IJSRuntime JsRuntime;
+@inject SkyHighRemote.Client.IAppConfiguration AppConfig
+@inject HttpClient Http
+@inject IWebAssemblyHostEnvironment HostEnvironment
+
+@if (loading)
+{
+    <div class="loader"><img src="images/Blocks-2s-200px.gif" /></div>
+}
+
+<div class="form-row">
+    <div class="col-8">
+        <label for="text" class="sr-only">Enter your text</label>
+        <input class="form-control form-control-lg mr-4" type="text" placeholder="Enter your text" id="text" aria-describedby="TextHelp" @bind="@text" maxlength="20">
+    </div>
+    <div class="col">
+        <button class="btn btn-lg btn-primary" type="submit" @onclick='@(async () => await SendText())' disabled=@loading>Send</button>
+    </div>
+</div>
+<div class="form-row">
+    <div class="col"> <small id="TextHelp" class="form-text text-muted">a-z, 0-9 &amp space</small></div>
+</div>
+
+@code {
+    [CascadingParameter] BlazoredModalInstance modal { get; set; }
+
+    private String text;
+    private bool loading = false;
+
+    /// <summary>
+    /// Send the entered text to the box if valid
+    /// </summary>
+    /// <returns></returns>
+    private async Task SendText()
+    {
+        loading = true;
+
+        Regex rx = new Regex(@"^[\d \w \s]+$");
+
+        // Validate
+        if (rx.IsMatch(text))
+        {
+            try
+            {
+                //Output any feedback
+                await JsRuntime.InvokeVoidAsync("feedback", AppConfig.Vibrate, AppConfig.PlaySound, AppConfig.ShowVisual);
+
+                HttpResponseMessage response = await Http.PostAsync($"skyremote/sendtext/{AppConfig.SkyBoxIP}/{text}", null);
+
+                if (HostEnvironment.IsDevelopment())
+                {
+                    Console.WriteLine(response);
+                }
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    loading = false;
+                    await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {response.ReasonPhrase}");
+                }
+                else
+                {
+                    await modal.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+            }
+        }
+        else
+        {
+            loading = false;
+            await JsRuntime.InvokeVoidAsync("alert", $"'{text}' is not a valid entry.");
+        }
+
+    }
+}

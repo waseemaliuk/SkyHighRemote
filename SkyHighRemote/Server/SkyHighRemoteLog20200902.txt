@@ -1,6 +1,0 @@
-2020-09-02 12:13:54.100 +01:00 [INF] Application started. Press Ctrl+C to shut down.
-2020-09-02 12:13:54.210 +01:00 [INF] Hosting environment: Development
-2020-09-02 12:13:54.219 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server
-2020-09-02 12:16:08.245 +01:00 [INF] Application started. Press Ctrl+C to shut down.
-2020-09-02 12:16:08.339 +01:00 [INF] Hosting environment: Development
-2020-09-02 12:16:08.344 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server

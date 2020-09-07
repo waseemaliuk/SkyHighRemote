@@ -134,3 +134,4 @@ C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Release\netcor
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Release\netcoreapp3.1\node_modules\sky-remote\README.md
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Release\netcoreapp3.1\node_modules\sky-remote\sky-remote.js
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Release\netcoreapp3.1\libman.json
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Release\netcoreapp3.1\Blazored.Modal.dll

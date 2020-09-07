@@ -28,6 +28,27 @@
           "lib/netstandard2.1/Blazored.LocalStorage.dll": {}
         }
       },
+      "Blazored.Modal/5.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.6",
+          "Microsoft.AspNetCore.Components.Web": "3.1.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.JSInterop.WebAssembly": "3.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Blazored.Modal.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.Modal.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazored.Modal.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazored.Modal.props": {}
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {
         "type": "package",
         "build": {
@@ -444,10 +465,10 @@
           "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
         }
       },
-      "Microsoft.JSInterop.WebAssembly/3.2.0": {
+      "Microsoft.JSInterop.WebAssembly/3.2.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.JSInterop": "3.1.3"
+          "Microsoft.JSInterop": "3.1.6"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.dll": {}
@@ -1680,6 +1701,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Blazored.LocalStorage": "3.0.0",
+          "Blazored.Modal": "5.0.3",
           "BuildBundlerMinifier": "3.2.449",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0",
           "SkyHighRemote.Shared": "1.0.0",
@@ -1733,6 +1755,25 @@
         "blazored.localstorage.nuspec",
         "icon.png",
         "lib/netstandard2.1/Blazored.LocalStorage.dll"
+      ]
+    },
+    "Blazored.Modal/5.0.3": {
+      "sha512": "fniADBMKHTxOK+lgQuZmkcc4I629rQOvOfgPsiUfkNM93TELmSTPoKWc3co6nDW8P1kkUQvzaALUSi7wNQcCWg==",
+      "type": "package",
+      "path": "blazored.modal/5.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.modal.5.0.3.nupkg.sha512",
+        "blazored.modal.nuspec",
+        "build/Blazored.Modal.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazored.Modal.props",
+        "buildTransitive/Blazored.Modal.props",
+        "icon.png",
+        "lib/netstandard2.1/Blazored.Modal.dll",
+        "staticwebassets/blazored-modal.css",
+        "staticwebassets/blazored.modal.js"
       ]
     },
     "BuildBundlerMinifier/3.2.449": {
@@ -2387,10 +2428,10 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "Microsoft.JSInterop.WebAssembly/3.2.0": {
-      "sha512": "PENYlaT/pzISf1msUV3mxRvua6AhqLmPQ4pqm8OrJo0BN7oNZNH/UHSU7+1cTBk689/3XWXOIqQibTrAiHWHnA==",
+    "Microsoft.JSInterop.WebAssembly/3.2.1": {
+      "sha512": "wYKx4YeBTnv1bzKZtdsWH0O9OmmYm7zq56QkKCUdl1hDg4Gn0lmCDfYBC0r1k5/Wh64IveuWwpkyTWjqCmp4pg==",
       "type": "package",
-      "path": "microsoft.jsinterop.webassembly/3.2.0",
+      "path": "microsoft.jsinterop.webassembly/3.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2398,7 +2439,7 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.dll",
         "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.xml",
-        "microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512",
+        "microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },

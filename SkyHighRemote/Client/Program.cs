@@ -1,4 +1,5 @@
 using Blazored.LocalStorage;
+using Blazored.Modal;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,19 +21,21 @@ namespace SkyHighRemote.Client
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddBlazoredLocalStorage();
+            builder.Services.AddBlazoredModal();
             builder.Services.AddTransient<IAppConfiguration, AppConfiguration>();
 
             await builder.Build().RunAsync();
         }
 
         /// <summary>
-        /// Load appsettings.json from the  wwwroot folder
+        /// Load appsettings.json from the wwwroot folder
         /// </summary>
         /// <param name="builder"></param>
         private static async Task LoadAppSettingsAsync(WebAssemblyHostBuilder builder)
         {
             // read JSON file as a stream for configuration
             var client = new HttpClient() { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
+
             // the appsettings file must be in 'wwwroot'
             using var response = await client.GetAsync("appsettings.json");
             using var stream = await response.Content.ReadAsStreamAsync();

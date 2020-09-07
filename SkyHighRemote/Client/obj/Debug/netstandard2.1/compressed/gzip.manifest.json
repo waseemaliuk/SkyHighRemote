@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DA8dQoX7fNwscfVnd-0cbSXpkQrNF7Fvad2SWKCcr-M=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0M36ZCFjXitY2uRuOCZt3_x6jC9DTUbfGJH83tbFLFw=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\SkyHighRemote.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Client.dll.gz"
     },
@@ -201,6 +201,11 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\q3_fWjpNl08HSe7t30hWH8uMt4RLyE7RcgNQQwXK5pw=.hash",
+      "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.Modal.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.Modal.dll.gz"
+    },
+    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
@@ -236,7 +241,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\b8l6FFDaQjpEM1GByDyeSr3GXycdgOn_pMKrPeEelQI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\yRDniojcZ3OK8v4-gP6QjdW6sYGXsxcGd2pDHsetuak=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\SkyHighRemote.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Shared.dll.gz"
     },
@@ -261,7 +266,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
@@ -271,12 +276,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\F89RRpdWNl__xp2cxLYCiVndYZOIG-Bl9R0On_3PfHo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\rE54Pw1et0q7vUXgF7JAu8PTL74GWdryQRCk6EM4giI=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\SkyHighRemote.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Zj-9fzSplYDMpxcJ7k_Yp-yRzu0lY9E1JiezhyxDVKk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-0Sx4SAtvNcNOMlJVUsVR7zVU2KCyW1aiI7eKCKiNN0=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\SkyHighRemote.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/SkyHighRemote.Shared.pdb.gz"
     },
@@ -301,12 +306,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Nq_L-C07oM1qutUr36BlFLH1Kv1Uw8vYGsnjMMnG3zE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\E7Khp7QgonH12AngiSBGIZIZFG2PO3eewMqwMW15fQ0=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\68bfYFUOMqgJW6wopNKdfYVkwyIenaJtdFCjDm6paFc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HJq7GijYvqoSzmnuSn6qnTxHfx6RwNVYl9vAiw8AbzQ=.hash",
       "Source": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

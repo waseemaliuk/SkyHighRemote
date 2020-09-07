@@ -1,3 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="/" Path="C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.Modal" Path="C:\Users\wasee\.nuget\packages\blazored.modal\5.0.3\build\..\staticwebassets\" />
 </StaticWebAssets>

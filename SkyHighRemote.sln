@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyHighRemote.Server", "SkyHighRemote\Server\SkyHighRemote.Server.csproj", "{E178E8AC-3DF6-4344-BCF6-C701DDE13CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyHighRemote.Server", "SkyHighRemote\Server\SkyHighRemote.Server.csproj", "{E178E8AC-3DF6-4344-BCF6-C701DDE13CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyHighRemote.Client", "SkyHighRemote\Client\SkyHighRemote.Client.csproj", "{01DFCA7E-0294-45C8-9DAA-B600AE668716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyHighRemote.Client", "SkyHighRemote\Client\SkyHighRemote.Client.csproj", "{01DFCA7E-0294-45C8-9DAA-B600AE668716}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyHighRemote.Shared", "SkyHighRemote\Shared\SkyHighRemote.Shared.csproj", "{7BCF7B4C-5E93-49E3-B014-E4BCBA82895C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyHighRemote.Shared", "SkyHighRemote\Shared\SkyHighRemote.Shared.csproj", "{7BCF7B4C-5E93-49E3-B014-E4BCBA82895C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

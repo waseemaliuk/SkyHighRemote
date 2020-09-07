@@ -10,12 +10,15 @@ namespace SkyHighRemote.Client
     /// </summary>
     public class AppConfiguration : IAppConfiguration
     {
+
         public String SkyBoxIP { get; set; }
         public bool Vibrate { get; set; }
 
         public bool PlaySound { get; set; }
 
         public bool ShowVisual { get; set; }
+
+        public String SkyPIN { get; set; }
 
         private ISyncLocalStorageService _localStorage;
 
@@ -36,6 +39,7 @@ namespace SkyHighRemote.Client
                 this.Vibrate = appConfig.Vibrate;
                 this.PlaySound = appConfig.PlaySound;
                 this.ShowVisual = appConfig.ShowVisual;
+                this.SkyPIN = appConfig.SkyPIN;
             }
 
         }
