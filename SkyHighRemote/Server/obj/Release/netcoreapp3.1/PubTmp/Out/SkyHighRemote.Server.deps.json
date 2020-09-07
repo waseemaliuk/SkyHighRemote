@@ -329,6 +329,23 @@
           "lib/netstandard2.1/Blazored.LocalStorage.dll": {}
         }
       },
+      "Blazored.Modal/5.0.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.6",
+          "Microsoft.AspNetCore.Components.Web": "3.1.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.JSInterop.WebAssembly": "3.2.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.Modal.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Blazored.Modal.dll": {}
+        }
+      },
       "BuildBundlerMinifier/3.2.449": {},
       "Microsoft.AspNetCore.Authorization/3.1.6": {
         "dependencies": {
@@ -400,7 +417,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly.HttpHandler": "3.2.0",
           "Microsoft.Extensions.Configuration.Json": "3.1.3",
           "Microsoft.Extensions.Logging": "3.1.6",
-          "Microsoft.JSInterop.WebAssembly": "3.2.0"
+          "Microsoft.JSInterop.WebAssembly": "3.2.1"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.AspNetCore.Components.WebAssembly.dll": {
@@ -753,14 +770,14 @@
           "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
         }
       },
-      "Microsoft.JSInterop.WebAssembly/3.2.0": {
+      "Microsoft.JSInterop.WebAssembly/3.2.1": {
         "dependencies": {
           "Microsoft.JSInterop": "3.1.6"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.dll": {
-            "assemblyVersion": "3.2.0.0",
-            "fileVersion": "3.200.20.26104"
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.200.120.31714"
           }
         },
         "compile": {
@@ -1630,6 +1647,7 @@
       "SkyHighRemote.Client/1.0.0": {
         "dependencies": {
           "Blazored.LocalStorage": "3.0.0",
+          "Blazored.Modal": "5.0.3",
           "BuildBundlerMinifier": "3.2.449",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0",
           "SkyHighRemote.Shared": "1.0.0",
@@ -3220,6 +3238,13 @@
       "path": "blazored.localstorage/3.0.0",
       "hashPath": "blazored.localstorage.3.0.0.nupkg.sha512"
     },
+    "Blazored.Modal/5.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fniADBMKHTxOK+lgQuZmkcc4I629rQOvOfgPsiUfkNM93TELmSTPoKWc3co6nDW8P1kkUQvzaALUSi7wNQcCWg==",
+      "path": "blazored.modal/5.0.3",
+      "hashPath": "blazored.modal.5.0.3.nupkg.sha512"
+    },
     "BuildBundlerMinifier/3.2.449": {
       "type": "package",
       "serviceable": true,
@@ -3458,12 +3483,12 @@
       "path": "microsoft.jsinterop/3.1.6",
       "hashPath": "microsoft.jsinterop.3.1.6.nupkg.sha512"
     },
-    "Microsoft.JSInterop.WebAssembly/3.2.0": {
+    "Microsoft.JSInterop.WebAssembly/3.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PENYlaT/pzISf1msUV3mxRvua6AhqLmPQ4pqm8OrJo0BN7oNZNH/UHSU7+1cTBk689/3XWXOIqQibTrAiHWHnA==",
-      "path": "microsoft.jsinterop.webassembly/3.2.0",
-      "hashPath": "microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512"
+      "sha512": "sha512-wYKx4YeBTnv1bzKZtdsWH0O9OmmYm7zq56QkKCUdl1hDg4Gn0lmCDfYBC0r1k5/Wh64IveuWwpkyTWjqCmp4pg==",
+      "path": "microsoft.jsinterop.webassembly/3.2.1",
+      "hashPath": "microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

@@ -134,3 +134,4 @@ C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\obj\Debug\netcorea
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\obj\Debug\netcoreapp3.1\SkyHighRemote.Server.dll
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\obj\Debug\netcoreapp3.1\SkyHighRemote.Server.pdb
 C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\obj\Debug\netcoreapp3.1\SkyHighRemote.Server.genruntimeconfig.cache
+C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server\bin\Debug\netcoreapp3.1\Blazored.Modal.dll

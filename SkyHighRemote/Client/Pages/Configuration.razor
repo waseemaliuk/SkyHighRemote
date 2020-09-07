@@ -9,102 +9,119 @@
 <div id="configuration">
     <h1>Configuration</h1>
     @if (loading)
-        {
-    <div class="loader"><img src="images/Blocks-2s-200px.gif" /></div>
-        }
+    {
+        <div class="loader"><img src="images/Blocks-2s-200px.gif" /></div>
+    }
 
     @if (AppConfig == null || string.IsNullOrEmpty(AppConfig.SkyBoxIP))
-        {
-    <div id="find">
-        <p>You must find and select the Sky HD box on your network.</p>
-        <button class="btn btn-lg btn-primary" type="submit" @onclick='@(async () => await FindBoxes())' disabled=@loading>Find Sky HD Boxes</button>
-    </div>
-    <div id="boxes">
-        @if (boxes.Count() > 0)
-                {
-        <p class="font-weight-bold">@boxes.Count() found.</p>
-                }
-        @foreach (SkyHDBox box in boxes)
-                {
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">@box.IPAddress</h4>
-                </div>
-                <div class="card-body">
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>@box.ModelName</li>
-                        <li>@box.ModelNumber</li>
-                    </ul>
-                    <button type="button" class="btn btn-sm btn-secondary" @onclick='@(e => SelectBox(box.IPAddress))'>Control this box</button>
-                </div>
-            </div>
+    {
+        <div id="find">
+            <p>You must find and select the Sky HD box on your network.</p>
+            <button class="btn btn-lg btn-primary" type="submit" @onclick='@(async () => await FindBoxes())' disabled=@loading>Find Sky HD Boxes</button>
         </div>
-                }
-    </div>
-        }
-        else
-        {
-    <div id="found" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <p class="font-weight-bold">You are controlling a box at @AppConfig.SkyBoxIP</p>
-            </div>
-        </div>
-        <div class="row" id="change">
-            <div class="col">
-                <button class="btn btn-sm btn-secondary" type="submit" @onclick='@(e => ClearBox())'>Change</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="custom-control custom-switch" id="vibrateDiv">
-                    <input type="checkbox" class="custom-control-input" id="vibrate" @onclick='@(async () => await ToggleVibrate())' checked="@AppConfig.Vibrate" />
-                    <label class="custom-control-label" for="vibrate">Vibrate (where supported)</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="custom-control custom-switch" id="playsoundDiv">
-                    <input type="checkbox" class="custom-control-input" id="playsound" @onclick='@(async () => await TogglePlaySound())' checked="@AppConfig.PlaySound" />
-                    <label class="custom-control-label" for="playsound">Play Sound (where supported)</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="custom-control custom-switch" id="showvisualDiv">
-                    <input type="checkbox" class="custom-control-input" id="showvisual" @onclick='ToggleShowVisual' checked="@AppConfig.ShowVisual" />
-                    <label class="custom-control-label" for="showvisual">Visual Feedback</label>
-                </div>
-            </div>
-        </div>
-    </div>
-        }
-    <div id="versions" class="container-fluid">
-            <div class="d-flex flex-row align-items-center small">
-                <p class="p-2 my-auto">Client Version : @clientVersion</p>
-                <p class="p-2 my-auto">Server Version : @serverVersion</p>
-       @if (serverVersion != clientVersion)
+        <div id="boxes">
+            @if (boxes.Count() > 0)
             {
-            <div class="p-2 my-auto"><button class="btn btn-outline-info btn-sm" type="submit" @onclick='@(async () => await RefreshApp())'>Refresh App</button></div>
-        }
+                <p class="font-weight-bold">@boxes.Count() found.</p>
+            }
+            @foreach (SkyHDBox box in boxes)
+            {
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">@box.IPAddress</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>@box.ModelName</li>
+                                <li>@box.ModelNumber</li>
+                            </ul>
+                            <button type="button" class="btn btn-sm btn-secondary" @onclick='@(e => SelectBox(box.IPAddress))'>Control this box</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div id="found" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="font-weight-bold">You are controlling a box at @AppConfig.SkyBoxIP</p>
+                </div>
+            </div>
+            <div class="row" id="change">
+                <div class="col">
+                    <button class="btn btn-sm btn-secondary" type="submit" @onclick='@(e => ClearBox())'>Change</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-switch" id="vibrateDiv">
+                        <input type="checkbox" class="custom-control-input" id="vibrate" @onclick='@(async () => await ToggleVibrate())' checked="@AppConfig.Vibrate" />
+                        <label class="custom-control-label" for="vibrate">Vibrate (where supported)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-switch" id="playsoundDiv">
+                        <input type="checkbox" class="custom-control-input" id="playsound" @onclick='@(async () => await TogglePlaySound())' checked="@AppConfig.PlaySound" />
+                        <label class="custom-control-label" for="playsound">Play Sound (where supported)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-switch" id="showvisualDiv">
+                        <input type="checkbox" class="custom-control-input" id="showvisual" @onclick='ToggleShowVisual' checked="@AppConfig.ShowVisual" />
+                        <label class="custom-control-label" for="showvisual">Visual Feedback</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <small id="PINHelp" class="form-text text-muted">Save typing by adding your numeric PIN for accessing Adult content.</small>
+            </div>
+            <div class="row mt-1">
+                <label for="PIN" class="col-form-label">Sky PIN</label>
+                <div class="pl-2">
+                    <input type="text" style="width: 100px;" id="PIN" @bind="AppConfig.SkyPIN" aria-describedby="PINHelp" class="form-control" maxlength="4" @oninput="@((e) => { PINValue = (string)e.Value; ConfirmPINEntry(); })" />
+                </div>
+                <div class="pl-2">
+                    @if (PINSaved)
+                    {
+                        <span class="oi oi-circle-check align-middle" aria-hidden="true"></span>
+                    }
+                </div>
+            </div>
+
+        </div>
+    }
+    <div id="versions" class="container-fluid">
+        <div class="d-flex flex-row align-items-center small">
+            <p class="p-2 my-auto">Client Version : @clientVersion</p>
+            <p class="p-2 my-auto">Server Version : @serverVersion</p>
+            @if (serverVersion != clientVersion)
+            {
+                <div class="p-2 my-auto"><button class="btn btn-outline-info btn-sm" type="submit" @onclick='@(async () => await RefreshApp())'>Refresh App</button></div>
+            }
         </div>
         @if (serverVersion != clientVersion)
         {
-        <div class="row">
-            <div class="col small"><p>If versions don't match after refresh, clear your browser cache!</p></div>
-        </div>
+            <div class="row">
+                <div class="col small"><p>If versions don't match after refresh, clear your browser cache!</p></div>
+            </div>
         }
     </div>
 </div>
 @code {
 
     private string clientVersion, serverVersion;
+    private string PINValue;
 
     List<SkyHDBox> boxes = new List<SkyHDBox>();
-    private bool loading = false;
+    private bool loading, PINSaved = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -152,9 +169,7 @@
         if (!String.IsNullOrEmpty(ipAddress))
         {
             AppConfig.SkyBoxIP = ipAddress;
-
             AppConfig.Save();
-
             boxes.Clear();
         }
     }
@@ -200,7 +215,7 @@
 
 
     /// <summary>
-    /// Sets showvisual setting based on the toggle state
+    /// Sets show visual setting based on the toggle state
     /// </summary>
     private void ToggleShowVisual()
     {
@@ -222,7 +237,32 @@
         {
             await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
         }
+    }
 
+    /// <summary>
+    /// Checks the PIN every time a keypress occurs and saves if valid
+    /// </summary>
+    private async Task ConfirmPINEntry()
+    {
+        try
+        {
+            PINSaved = false;
+            PINValue = PINValue.Trim()
+;
+            Regex rx = new Regex(@"^\d{4,}$"); //Numbers only, 4 characters
+
+            if (String.IsNullOrEmpty(PINValue) || rx.IsMatch(PINValue)) // Save when blank or passes regex
+            {
+                AppConfig.SkyPIN = PINValue;
+                AppConfig.Save();
+                PINSaved = true;
+            }
+        }
+        catch (Exception ex)
+        {
+
+            await JsRuntime.InvokeVoidAsync("alert", $"There was a problem : {ex}");
+        }
     }
 }
 

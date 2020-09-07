@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Pz4UXC1QwILl2ghPCUohr3Ake8YeGQL8io8x6DCqQikG9sBkNbfVe9ba9Hw6U7JYwm36872uTqLeP6cdxGeAVw==",
+  "dgSpecHash": "Z+MksnKScSm6GVhs2NBcWOZbiKex3ax3bvKu5qtdQwRD+ly6514fYUvMJZzim71l92AH9+Ye16lJ+ukqAAAMAg==",
   "success": true,
   "projectFilePath": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Server\\SkyHighRemote.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wasee\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
+    "C:\\Users\\wasee\\.nuget\\packages\\blazored.modal\\5.0.3\\blazored.modal.5.0.3.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
@@ -40,7 +41,7 @@
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.6\\microsoft.extensions.options.configurationextensions.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop\\3.1.6\\microsoft.jsinterop.3.1.6.nupkg.sha512",
-    "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0\\microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512",
+    "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",

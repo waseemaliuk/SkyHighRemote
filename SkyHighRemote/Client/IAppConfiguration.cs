@@ -10,6 +10,7 @@ namespace SkyHighRemote.Client
         public bool Vibrate { get; set; }
         public bool PlaySound { get; set; }
         public bool ShowVisual { get; set; }
+        public String SkyPIN { get; set; }
         public void Save();
     }
 }

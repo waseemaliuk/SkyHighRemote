@@ -1,0 +1,15 @@
+2020-09-07 09:17:35.305 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-07 09:17:35.384 +01:00 [INF] Hosting environment: Development
+2020-09-07 09:17:35.390 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server
+2020-09-07 09:22:41.965 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-07 09:22:42.029 +01:00 [INF] Hosting environment: Development
+2020-09-07 09:22:42.034 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server
+2020-09-07 09:23:36.393 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-07 09:23:36.470 +01:00 [INF] Hosting environment: Development
+2020-09-07 09:23:36.476 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server
+2020-09-07 09:25:09.871 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-07 09:25:09.943 +01:00 [INF] Hosting environment: Development
+2020-09-07 09:25:09.951 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server
+2020-09-07 09:29:29.915 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-07 09:29:30.080 +01:00 [INF] Hosting environment: Development
+2020-09-07 09:29:30.092 +01:00 [INF] Content root path: C:\Source\Repos\Automation\SkyHighRemote\SkyHighRemote\Server

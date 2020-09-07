@@ -1,11 +1,19 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-QxkajIvZYuf+\/1oJgXo03hkruizjkumYa09Tld6SIjI=",
+      "hash": "sha256-sdZqUtyrd+8R1wGKgpOmPO\/bXGldZQY6WfcarjFu1E4=",
+      "url": "_content\/Blazored.Modal\/blazored-modal.css"
+    },
+    {
+      "hash": "sha256-9YltAWRK4q86yQVhdg1+kGORouWFTfpoBaY5Ie\/X4JQ=",
+      "url": "_content\/Blazored.Modal\/blazored.modal.js"
+    },
+    {
+      "hash": "sha256-AWRWxAHgL95MbKwxuZTZ1hS5wB+Pa+yuXFStU6ySNiE=",
       "url": "appsettings.json"
     },
     {
-      "hash": "sha256-+IBsK3lXLj1dCgCuOzfX5xk9Z6Rel7goyw424r\/3SjM=",
+      "hash": "sha256-RuaK8gST\/Dk66XrE8x+PqWagKmKiqTnpizubmAxhnmw=",
       "url": "css\/app.css"
     },
     {
@@ -73,11 +81,11 @@
       "url": "images\/light.jpg"
     },
     {
-      "hash": "sha256-80\/OS4gnDmSVH1NezSOl3r9\/hZEMcJ8nzFiu+kqtyII=",
+      "hash": "sha256-uo8tCwnMdxTXJvmoCfqTrlL7mt2DcGyECziCSAu8s6M=",
       "url": "images\/SkyHD.jpg"
     },
     {
-      "hash": "sha256-KBFrTu7t\/c0BUkPSj64gcH5+Pka5CVw4jdBa+JAe3gY=",
+      "hash": "sha256-bY2NUzEcQo5ME9JZUYglDbLWzJ0hZ1oNaDtfO6d6yh4=",
       "url": "index.html"
     },
     {
@@ -105,7 +113,7 @@
       "url": "sounds\/click.mp3"
     },
     {
-      "hash": "sha256-DA8dQoX7fNwscfVnd\/0cbSXpkQrNF7Fvad2SWKCcr\/M=",
+      "hash": "sha256-0M36ZCFjXitY2uRuOCZt3+x6jC9DTUbfGJH83tbFLFw=",
       "url": "_framework\/_bin\/SkyHighRemote.Client.dll"
     },
     {
@@ -265,6 +273,10 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
+      "hash": "sha256-q3+fWjpNl08HSe7t30hWH8uMt4RLyE7RcgNQQwXK5pw=",
+      "url": "_framework\/_bin\/Blazored.Modal.dll"
+    },
+    {
       "hash": "sha256-bSgsT2x5xMvs8mara5wU+EJwcyHa9GVMU85HwhWcdWM=",
       "url": "_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll"
     },
@@ -293,7 +305,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
     },
     {
-      "hash": "sha256-b8l6FFDaQjpEM1GByDyeSr3GXycdgOn+pMKrPeEelQI=",
+      "hash": "sha256-yRDniojcZ3OK8v4\/gP6QjdW6sYGXsxcGd2pDHsetuak=",
       "url": "_framework\/_bin\/SkyHighRemote.Shared.dll"
     },
     {
@@ -313,7 +325,7 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Options.dll"
     },
     {
-      "hash": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=",
+      "hash": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs=",
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
@@ -321,11 +333,11 @@
       "url": "_framework\/_bin\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-F89RRpdWNl++xp2cxLYCiVndYZOIG\/Bl9R0On+3PfHo=",
+      "hash": "sha256-rE54Pw1et0q7vUXgF7JAu8PTL74GWdryQRCk6EM4giI=",
       "url": "_framework\/_bin\/SkyHighRemote.Client.pdb"
     },
     {
-      "hash": "sha256-Zj\/9fzSplYDMpxcJ7k+Yp\/yRzu0lY9E1JiezhyxDVKk=",
+      "hash": "sha256-\/0Sx4SAtvNcNOMlJVUsVR7zVU2KCyW1aiI7eKCKiNN0=",
       "url": "_framework\/_bin\/SkyHighRemote.Shared.pdb"
     },
     {
@@ -345,7 +357,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-Nq+L\/C07oM1qutUr36BlFLH1Kv1Uw8vYGsnjMMnG3zE=",
+      "hash": "sha256-E7Khp7QgonH12AngiSBGIZIZFG2PO3eewMqwMW15fQ0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

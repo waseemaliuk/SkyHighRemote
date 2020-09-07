@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5uryUYmhU+fqd/IzgjgXnrBzXk50gvAOFF22DzBRSpShmxp+l4hAckjWdpg1T0WWSw+ixwjYNIj1Uv74N1PylA==",
+  "dgSpecHash": "oxJxg8aG71CiDB7V2YM+saaD1oFeegRV9sO15WL85UuzMqbQqT2UGQscYuFKOhiOw2ZskP1zjTKSDyrRSTFh7g==",
   "success": true,
   "projectFilePath": "C:\\Source\\Repos\\Automation\\SkyHighRemote\\SkyHighRemote\\Client\\SkyHighRemote.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wasee\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
+    "C:\\Users\\wasee\\.nuget\\packages\\blazored.modal\\5.0.3\\blazored.modal.5.0.3.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
@@ -33,7 +34,7 @@
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\microsoft.extensions.options.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop\\3.1.6\\microsoft.jsinterop.3.1.6.nupkg.sha512",
-    "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0\\microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512",
+    "C:\\Users\\wasee\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\wasee\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
