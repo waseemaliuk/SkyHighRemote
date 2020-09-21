@@ -1,5 +1,5 @@
 # SkyHighRemote
 A Blazor PWA to control Sky HD Boxes
 
-
-Required Node.js on the server or your development environment.
+Requires .Net Core on the server or your development environment.
+Requires Node.js on the server or your development environment.
