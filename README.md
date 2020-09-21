@@ -114,7 +114,7 @@ Optional/Recommended: If you're enabling the firewall (UFW), add the following r
     ufw allow ssh
     ufw allow http
     ufw allow https
-    ufw allow proto udp from 192.168.1.0/24 to any port 10000:59999
+    ufw allow proto udp from [your subnet e.g. 192.168.1.0/24] to any port 10000:59999
 
 
 ## FAQ
