@@ -34,3 +34,7 @@ A 'quirk' of PWA's is that some browsers (cough, Safari Mobile) don't update the
 I am using an existing node module to do the network calls to the box.  This is called from .Net Core.  An alternative would have been to figure out this part myself using some kind of packet sniffing (or my currently non-existent node.js porting skills!).  Once I got the node.js module working in .Net Core and saw how fast it was it made that arduous task redundant.
 
 
+<img src="https://raw.githubusercontent.com/waseemali-S4TC/SkyHighRemote/master/SkyHighRemote/Client/wwwroot/images/Screen2.jpg" width="300px" height="auto" style="border: 1px solid #F5F5F5;">
+<img src="https://raw.githubusercontent.com/waseemali-S4TC/SkyHighRemote/master/SkyHighRemote/Client/wwwroot/images/Screen1.jpg" width="300px" height="auto" style="border: 1px solid #F5F5F5;">
+
+
