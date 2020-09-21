@@ -25,7 +25,7 @@ The application uses a number of other existing Open Source modules, in particul
 ## FAQ
 Any questions about the application and deployment will be answered here.
 
-1.  Why is there are client and server side version number on the configuration page?
+1.  Why is there a client and server side version number on the configuration page?
 
 A 'quirk' of PWA's is that some browsers (cough, Safari Mobile) don't update themselves when the application changes server side.  This means that the client side and server side application can become out of sync with each other. To rectify this I have added a version check which flags up a disparity on the configuration page of the application.  Annoyingly, Safari sometimes ***STILL*** won't update so you have to clear your browser cache to rectify that.
 
