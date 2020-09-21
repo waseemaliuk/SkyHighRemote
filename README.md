@@ -5,7 +5,7 @@ What began as an excuse to learn some Blazor actually turned into a useful appli
 
 The application can be installed on your device as a Progressive Web App.  You still need the Server side running but installing it on your mobile or similar makes it work more like a regular mobile app.
 
-I run this on IOS14 in Firefox with the server side hosted on a Raspberry PI behind Nginx.
+I run this on IOS14 in Firefox with the server side hosted on a Ubuntu 18.04 server behind Nginx.
 
 You can store your Sky PIN in the application as well as send text to the box.
 
@@ -19,8 +19,103 @@ The application uses a number of other existing Open Source modules, in particul
 ## Installation
 - Requires .Net Core 3.1 on the server or your development environment.  Not tested with any other version.
 - Requires Node.js on the server or your development environment.
+- To run locally, clone this repo to your local machine, open in Visual Studio, and run.
 
-- Clone this repo to your local machine, open in Visual Studio, and run.
+### Example Installation on Ubuntu 18.04 with Nginx:  
+
+Install and update Ubuntu
+
+    apt update && apt upgrade
+
+Install Nginx and Node.js
+
+    apt install nginx nodejs
+    systemctl start nginx
+    systemctl enable nginx
+    
+Download and install .NET Core (more info here: https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)
+
+    wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    
+    sudo apt-get update; \
+    sudo apt-get install -y apt-transport-https && \
+    sudo apt-get update && \
+    sudo apt-get install -y dotnet-sdk-3.13.1
+
+Clone the SkyHighRemote repository
+
+    git clone https://github.com/waseemali-S4TC/SkyHighRemote.git
+
+Build and publish the app (run these commands in the directory that you cloned the repository into)
+    
+    dotnet build
+    dotnet publish
+
+Make a directory in the web root and copy the published files there
+
+    mkdir /var/www/SkyHighRemote
+    cp -r ./SkyHighRemote/SkyHighRemote/Server/bin/Release/netcoreapp3.1/publish/* /var/www/SkyHighRemote/
+
+Edit the Nginx configuration file for port redirection
+
+    vim /etc/nginx/sites-available/default
+
+Under the 'Default server configuration' section, find the line that starts 'location / {' and within the curly braces add the following
+
+    proxy_pass http://localhost:5000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection keep-alive;
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+Save the file
+
+Test and reload Nginx
+
+    nginx -t (tests the configuation file)
+    nginx -s reload (reloaded the Nginx server)
+
+Create a service file to run the app (this will allow it to run unattended)
+
+    vim /etc/systemd/system/SkyHighRemote.service
+
+Add the following text
+
+    [Unit]
+    Description=.NET Web App running on Ubuntu
+
+    [Service]
+    WorkingDirectory=/var/www/SkyHighRemote
+    ExecStart=/usr/bin/dotnet SkyHighRemote.Server.dll
+    Restart=always
+    # Restart service after 10 seconds if the dotnet service crashes:
+    RestartSec=10
+    SyslogIdentifier=dotnet-SkyHighRemote
+    User=root
+    Environment=ASPNETCORE_ENVIRONMENT=Development
+
+    [Install]
+    WantedBy=multi-user.target
+
+
+Save the file
+
+Start and enable the service
+
+    systemctl start SkyHighRemote.service
+    systemctl enable SkyHighRemote.service
+
+Optional/Recommended: If you're enabling the firewall (UFW), add the following rules
+
+    ufw allow ssh
+    ufw allow http
+    ufw allow https
+    ufw allow proto udp from 192.168.1.0/24 to any port 10000:59999
+
 
 ## FAQ
 Any questions about the application and deployment will be answered here.
