@@ -41,16 +41,16 @@ Download and install .NET Core (more info here: https://docs.microsoft.com/en-us
     sudo apt-get update; \
     sudo apt-get install -y apt-transport-https && \
     sudo apt-get update && \
-    sudo apt-get install -y dotnet-sdk-3.13.1
+    sudo apt-get install -y dotnet-sdk-3.1
 
 Clone the SkyHighRemote repository
 
     git clone https://github.com/waseemali-S4TC/SkyHighRemote.git
 
-Build and publish the app (run these commands in the directory that you cloned the repository into)
+Build and publish the app.  Run these commands in the directory that you cloned the repository into. (In this example we are preparing a Release build).
     
-    dotnet build
-    dotnet publish
+    dotnet build -c Release
+    dotnet publish -c Release
 
 Make a directory in the web root and copy the published files there
 
